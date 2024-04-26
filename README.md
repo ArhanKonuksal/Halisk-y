@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+Turkish:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Halisköy Projesi
+Proje Hakkında
+Halisköy, fırın ve süt ürünleri üreten bir şirketin web sitesidir. Bu projede, şirketin ürünlerini ve hizmetlerini tanıtmak için bir web sitesi geliştirilmiştir.
 
-## Available Scripts
+Özellikler
+Şirketin ürünleri ve hizmetleri hakkında bilgi sunar.
+İletişim bilgilerini içerir.
+Ürün katalogunu ve fiyatları gösterir.
+Müşterilere online sipariş olanağı sağlar.
+Sıkça sorulan sorular bölümü bulunur.
+Kurulum
+Projeyi klonlayın: git clone https://github.com/your-username/haliskoy.git
+Proje dizinine gidin: cd haliskoy
+Gerekli bağımlılıkları yükleyin: npm install
+Uygulamayı başlatın: npm start
+Katkıda Bulunma
+Forklayın (https://github.com/your-username/haliskoy/fork)
+Yeni bir özellik dalı oluşturun: git checkout -b feature/new-feature
+Değişikliklerinizi commit edin: git commit -am 'Add new feature'
+Dalınıza push yapın: git push origin feature/new-feature
+Bir pull isteği açın
 
-In the project directory, you can run:
+English:
 
-### `npm start`
+Halisköy Project
+About the Project
+Halisköy is a website for a company that produces bakery and dairy products. In this project, a website has been developed to introduce the company's products and services.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Features
+Provides information about the company's products and services.
+Includes contact information.
+Displays product catalog and prices.
+Provides online ordering facility for customers.
+Includes a frequently asked questions section.
+Installation
+Clone the project: git clone https://github.com/your-username/haliskoy.git
+Navigate to the project directory: cd haliskoy
+Install the dependencies: npm install
+Start the application: npm start
+Contributing
+Fork it (https://github.com/your-username/haliskoy/fork)
+Create your feature branch: git checkout -b feature/new-feature
+Commit your changes: git commit -am 'Add new feature'
+Push to the branch: git push origin feature/new-feature
+Submit a pull request
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
