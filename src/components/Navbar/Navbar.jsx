@@ -1,9 +1,8 @@
-import "./Navbar.css"
-
-import logo from "../../assets/Beykoy_Logo.png"
 import React, {useState} from 'react'
+import logo from "../../assets/Beykoy_Logo.png"
 import { Link } from "react-router-dom"
 import {FaBars, FaTimes} from "react-icons/fa"
+import "./Navbar.css"
 
 const Navbar = () => {
 
@@ -26,16 +25,16 @@ return (
       </Link>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
-              <Link to="/ana-sayfa">Ana Sayfa</Link>
+              <Link to="/AnaSayfa">Ana Sayfa</Link>
           </li>
           <li>
-              <Link to="/hizmetler">Hizmetler</Link>
+              <Link to="/Hakkımızda">Hakkımızda</Link>
           </li>
           <li>
-              <Link to="/hakkımızda">Hakkımızda</Link>
+              <Link to="/Ürünlerimiz">Ürünlerimiz</Link>
           </li>
           <li>
-              <Link to="/iletişim">İletişim</Link>
+              <Link to="/İletişim">İletişim</Link>
           </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>
