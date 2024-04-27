@@ -12,7 +12,6 @@ function App() {
     <Router>
     <Routes>
         <Route path="/" element={<Anasayfa />} />
-          <Route path="/Anasayfa" element={<Anasayfa />} />
           <Route path="/Hakkımızda" element={<Hakkımızda />} />
           <Route path="/İletişim" element={<İletişim />} />
           <Route path="/Ürünlerimiz" element={<Ürünlerimiz />} />

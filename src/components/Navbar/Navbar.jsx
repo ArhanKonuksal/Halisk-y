@@ -9,7 +9,7 @@ const Navbar = () => {
   const [click, setClick] = useState(false)
   const handleClick = () => setClick(!click)
 
-  const [color, setColor] = useState(false)
+  const [setColor] = useState(false)
   const changeColor = () => {
       if (window.scrollY >= 100) {setColor(true)} else {
           setColor(false)
@@ -19,25 +19,22 @@ const Navbar = () => {
   window.addEventListener("scroll", changeColor)
 
 return (
-  <div className={color ? "header header-bg" : "header"}>
+  <div className='navbar'>
       <Link to="/">
-      <img alt="logo" size="3px" src={logo}></img> 
+      <img  className="photo-container" alt="logo" size="3px" src={logo}></img> 
       </Link>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
-              <Link to="/AnaSayfa">Ana Sayfa</Link>
+              <Link to="/Ürünlerimiz">Ürünlerimiz</Link>
           </li>
           <li>
               <Link to="/Hakkımızda">Hakkımızda</Link>
           </li>
           <li>
-              <Link to="/Ürünlerimiz">Ürünlerimiz</Link>
-          </li>
-          <li>
               <Link to="/İletişim">İletişim</Link>
           </li>
       </ul>
-      <div className="hamburger" onClick={handleClick}>
+      <div onClick={handleClick}>
           {click ? (
               <FaTimes size={20} style={{color:
               "#fff"}}/>
