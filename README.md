@@ -39,11 +39,11 @@ Halisköy is a website for a company that produces bakery and dairy products. In
 
 ## Features
 
-*Provides information about the company's products and services.
-*Includes contact information.
-*Displays product catalog and prices.
-*Provides online ordering facility for customers.
-*Includes a frequently asked questions section.
+* Provides information about the company's products and services.
+* Includes contact information.
+* Displays product catalog and prices.
+* Provides online ordering facility for customers.
+* Includes a frequently asked questions section.
 
 ## Installation
 
