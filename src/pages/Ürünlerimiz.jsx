@@ -1,14 +1,18 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import Footer from "../components/Footer/Footer"
-import Ürünler from "../components/Ürünler/Ürünler"
+import Ürün from '../components/Ürünler/Ürün';
+
 
 const Ürünlerimiz = () => {
   return (
     <>
     <Navbar />
-    <div>Ürünlerimiz</div>
-      <Ürünler />
+    <div>
+      <h1>Ürünlerimiz</h1>
+      <p></p>
+    </div>
+    <Ürün />
     <Footer />
     </>
   )
