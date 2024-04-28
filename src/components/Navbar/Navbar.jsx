@@ -1,29 +1,43 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import logo from "../../assets/Beykoy_Logo.png"
 import { Link } from "react-router-dom"
 import {FaBars, FaTimes} from "react-icons/fa"
 import "./Navbar.css"
 
+
 const Navbar = () => {
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click);
+  
+    const [setColor] = useState(false);
+    
+    useEffect(() => {
+      const changeColor = () => {
+        if (window.scrollY >= 100) {
+          setColor(true);
+        } else {
+          setColor(false);
+        }
+      };
 
-  const [click, setClick] = useState(false)
-  const handleClick = () => setClick(!click)
+      if (typeof window!== 'undefined') {
+        window.addEventListener("scroll", changeColor)
+      }
 
-  const [setColor] = useState(false)
-  const changeColor = () => {
-      if (window.scrollY >= 100) {setColor(true)} else {
-          setColor(false)
-  }
-}
+      return () => {
+        if (typeof window!== 'undefined') {
+          window.removeEventListener("scroll", changeColor);
+        }
+      };
+    }, []);
 
-  window.addEventListener("scroll", changeColor)
 
 return (
   <div className='navbar'>
       <Link to="/">
       <img  className="photo-container" alt="logo" size="3px" src={logo}></img> 
       </Link>
-      <ul className={click ? "nav-menu active" : "nav-menu"}>
+      <ul className={click? "nav-menu active" : "nav-menu"}>
           <li>
               <Link to="/Ürünlerimiz">Ürünlerimiz</Link>
           </li>
@@ -35,7 +49,7 @@ return (
           </li>
       </ul>
       <div onClick={handleClick}>
-          {click ? (
+          {click? (
               <FaTimes size={20} style={{color:
               "#fff"}}/>
               ):(<FaBars size={20} style={{color: "#fff"
