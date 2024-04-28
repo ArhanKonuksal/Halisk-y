@@ -9,7 +9,7 @@ const Navbar = () => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
   
-    const [setColor] = useState(false);
+    const [color, setColor] = useState(false);
     
     useEffect(() => {
       const changeColor = () => {
