@@ -37,6 +37,9 @@ return (
       <Link to="/">
       <img  className="photo-container" alt="logo" size="3px" src={logo}></img> 
       </Link>
+      <Link to="/">
+    <h1>Beyköy Süt Ürünleri</h1>
+    </Link>
       <ul className={click? "nav-menu active" : "nav-menu"}>
           <li>
               <Link to="/Ürünlerimiz">Ürünlerimiz</Link>
