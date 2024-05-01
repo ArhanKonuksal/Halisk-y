@@ -3,10 +3,8 @@ nav {
 }
 
 img {
-    width: 20%;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin: 20px;
+    width: "200";
+    height: "200";
 }
 
 ul {
