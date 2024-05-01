@@ -4,6 +4,7 @@ import Footer from "../components/Footer/Footer"
 import Ürün from '../components/Ürünler/Ürün';
 
 
+
 const Ürünlerimiz = () => {
   return (
     <>

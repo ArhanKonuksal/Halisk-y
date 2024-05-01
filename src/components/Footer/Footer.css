@@ -1,57 +1,42 @@
-.footer{
-    width: 100%;
-    padding: 6rem 0;
-    background-color: rgba(19, 19, 19, 0.8);
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 
-.footer-container{
-    max-width: 1140px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
+.footer div {
+    display: inline-block;
+    padding-top: 30px;
+    height: 180px;
+    text-align: center;
 }
 
-.left{
-    height: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+.footer p {
+    font-family: Helvetica, sans-serif;
+    padding-top: 10px;
+    font-size: 14px;
 }
 
-.location {
-    display: flex;
-    margin-bottom: 0.8rem;
+.footer h4 {
+    font-size: 18px;
+}
+.footer #footer-info {
+    float: left;
+    width: 25%;
+    height: 200px;
+    background-color: black;
 }
 
-.location p{
-    line-height: 30px;
+.footer #footer-iletisim {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: black;
 }
 
-.right {
-    height: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-}
-
-.social {
-    margin-top: 1rem;
-}
-
-h4{
-    font-size: 1.2rem;
-    padding-bottom: 0.7rem;
-}
-
-p{
-    font-size: 1.2rem;
-}
-
-@media screen and (max-width: 640px){
-    .footer-container {
-    grid-template-columns: 1fr;
-    }
+.footer #footer-calisma {
+    float: right;
+    width: 25%;
+    height: 200px;
+    background-color: black;
 }

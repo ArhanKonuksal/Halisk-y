@@ -1,8 +1,8 @@
 import React from 'react';
-import { ÜRÜNLER } from './Ürünler'; // Correct import statement
+import { ÜRÜNLER } from './Ürünler'; 
 import './ürün.css';
 
-const Ürün = ({ data }) => { // Changed component name to Ürün
+const Ürün = ({ data }) => {
   return (
     <div className='ürün'>
       <img src={data.ÜrünResmi} alt={data.Ürünİsmi} />
