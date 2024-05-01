@@ -1,66 +1,59 @@
-import React, {useState, useEffect} from 'react'
-import logo from "../../assets/Beykoy_Logo.png"
-import { Link } from "react-router-dom"
-import {FaBars, FaTimes} from "react-icons/fa"
-import "./Navbar.css"
-
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from '../../assets/Beykoy_Logo.png';
+import './Navbar.css';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
-  
-    const [color, setColor] = useState(false);
-    
+    const [scroll, setScroll] = useState(false);
+
     useEffect(() => {
-      const changeColor = () => {
-        if (window.scrollY >= 100) {
-          setColor(true);
-        } else {
-          setColor(false);
-        }
-      };
+        const changeColor = () => {
+            setScroll(window.scrollY >= 100);
+        };
 
-      if (typeof window!== 'undefined') {
-        window.addEventListener("scroll", changeColor)
-      }
+        window.addEventListener('scroll', changeColor);
 
-      return () => {
-        if (typeof window!== 'undefined') {
-          window.removeEventListener("scroll", changeColor);
-        }
-      };
+        return () => {
+            window.removeEventListener('scroll', changeColor);
+        };
     }, []);
 
+    const handleClick = () => {
+        setClick(!click);
+    };
 
-return (
-  <div className='navbar'>
-      <Link to="/">
-      <img  className="photo-container" alt="logo" size="3px" src={logo}></img> 
-      </Link>
-      <Link to="/">
-    <h1>Beyköy Süt Ürünleri</h1>
-    </Link>
-      <ul className={click? "nav-menu active" : "nav-menu"}>
-          <li>
-              <Link to="/Ürünlerimiz">Ürünlerimiz</Link>
-          </li>
-          <li>
-              <Link to="/Hakkımızda">Hakkımızda</Link>
-          </li>
-          <li>
-              <Link to="/İletişim">İletişim</Link>
-          </li>
-      </ul>
-      <div onClick={handleClick}>
-          {click? (
-              <FaTimes size={20} style={{color:
-              "#fff"}}/>
-              ):(<FaBars size={20} style={{color: "#fff"
-           }} />
-          )}
-      </div>
-  </div>
-)
-}
+    return (
+        <nav className={scroll ? 'navbar scrolled' : 'navbar'}>
+            <div className="navbar-container">
+                <Link to="/" className="navbar-logo" onClick={() => setClick(false)}>
+                    <img src={logo} alt="Beyköy Süt Ürünleri" className="navbar-icon" />
+                    Beyköy Süt Ürünleri
+                </Link>
+                <div className="menu-icon" onClick={handleClick}>
+                    {click ? <FaTimes className="menu-icon-close" /> : <FaBars className="menu-icon-bars" />}
+                </div>
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                    <li className="nav-item">
+                        <Link to="/Ürünlerimiz" className="nav-links" onClick={() => setClick(false)}>
+                            Ürünlerimiz
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/Hakkımızda" className="nav-links" onClick={() => setClick(false)}>
+                            Hakkımızda
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/İletişim" className="nav-links" onClick={() => setClick(false)}>
+                            İletişim
+                        </Link>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    );
+};
 
-export default Navbar
+export default Navbar;
