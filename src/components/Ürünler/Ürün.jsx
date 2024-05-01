@@ -1,8 +1,11 @@
 import React from 'react';
-import { ÜRÜNLER } from './Ürünler'; 
-import './ürün.css';
+import './Ürün.css';
 
 const Ürün = ({ data }) => {
+  if (!data) {
+    return null; 
+  }
+
   return (
     <div className='ürün'>
       <img src={data.ÜrünResmi} alt={data.Ürünİsmi} />
@@ -11,17 +14,5 @@ const Ürün = ({ data }) => {
   );
 };
 
-const Ürünler = () => {
-  return (
-    <div className='ürün'>
-      <div>
-        <h1>Ürünlerimiz</h1>
-      </div>
-      <div className='ürünler'> 
-        {ÜRÜNLER.map(ürün => <Ürün key={ürün.id} data={ürün} />)}
-      </div>
-    </div>
-  );
-};
 
-export default Ürünler;
+export default Ürün;

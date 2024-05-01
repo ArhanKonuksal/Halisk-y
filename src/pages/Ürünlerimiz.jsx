@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import Footer from "../components/Footer/Footer"
 import Ürün from '../components/Ürünler/Ürün';
+import {ÜRÜNLER} from "../components/Ürünler/Ürünler"
 
 
 
@@ -11,8 +12,13 @@ const Ürünlerimiz = () => {
     <Navbar />
     <div>
       <h1>Ürünlerimiz</h1>
-      <p></p>
+      <p>İşte Ürünlerimiz</p>
     </div>
+    <div className='ürünler'>
+        {ÜRÜNLER.map(ürün => (
+          <Ürün key={ürün.id} data={ürün} />
+        ))}
+        </div>
     <Ürün />
     <Footer />
     </>
