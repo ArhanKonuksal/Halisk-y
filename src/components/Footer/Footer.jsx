@@ -12,14 +12,14 @@ export const Footer = () => {
 
     <div className="footer-iletisim">
      <h4>İletişim</h4>
-     <p>Şehit Turgut Sokak No:6 A. Beyköy/. Lefkoşa.</p>
-     <p>beykoy@gmail.com +90 533 888 88 88 </p>
+     <p>Şehit Turgut Sokak No:6 <br></br>A. Beyköy/. Lefkoşa.</p>
+     <p>beykoy@gmail.com <br></br>+90 533 888 88 88 </p>
     </div>
 
     <div className="footer-calisma">
      <h4>Çalışma Saatleri</h4>
-     <p>Pazartesi - Cuma: 08:30 - 18:00</p>
-     <p>Cumartesi: 08:30 - 13:00</p>
+     <p>Pazartesi - Cuma: <br></br>08:30 - 18:00</p>
+     <p>Cumartesi: <br></br>08:30 - 13:00</p>
     </div>
  </div>
     );

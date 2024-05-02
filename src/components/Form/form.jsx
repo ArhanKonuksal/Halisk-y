@@ -1,22 +1,26 @@
-import React from 'react'
+import React from 'react';
+import './form.css';
 
-const form = () => {
+const Form = () => {
   return (
-    <div className='from'>
-        <form>
-            <label>İsim</label>
-            <input type="text"></input>
-            <label> Soy İsim</label>
-            <input type="text"></input>
-            <label>Email</label>
-            <input type="text"></input>
-            <label>Mesajınız</label>
-            <input type="text"></input>
-            <textarea rows="6" placeholder="Mesajınızı buraya yazınız"/>
-            <button className='btn'>GÖNDER</button>
-        </form>
-    </div>
-  )
-}
+    <div className='form'>
+      <form>
+        <label>İsim</label>
+        <input type="text" />
 
-export default form
+        <label> Soy İsim</label>
+        <input type="text" />
+
+        <label>Email</label>
+        <input type="text" />
+
+        <label>Mesajınız</label>
+        <textarea rows="6" placeholder="Mesajınızı buraya yazınız"></textarea>
+
+        <button className='btn'>GÖNDER</button>
+      </form>
+    </div>
+  );
+};
+
+export default Form;

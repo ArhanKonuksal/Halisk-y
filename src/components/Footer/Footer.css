@@ -2,13 +2,16 @@
     background-color: black;
     color: white;
     text-align: center;
+    overflow: hidden;
 }
 
 .footer div {
     display: inline-block;
     padding-top: 30px;
     height: 180px;
+    width: 30%;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .footer p {
@@ -39,4 +42,10 @@
     width: 25%;
     height: 200px;
     background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .footer div {
+        width: 100%;
+    }
 }
