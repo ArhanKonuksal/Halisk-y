@@ -4,7 +4,7 @@ import "./Footer.css";
 export const Footer = () => {
   return (
     <div className="footer">
-    <div className="footer-info">
+    <div>
      <h4>Beyköy Süt Ürünleri</h4>
      <p>1989'da kurulan Beyköy Süt Ürünleri, geleneksel lezzetlerle modern talepleri buluşturan, uluslararası standartlarda <br/>sürdürülebilir ve kaliteli süt ürünleri üretir.</p>
      <p style={{textAlign: 'left', paddingTop: '50px'}}> Designed and Powered by <strong>Virtue</strong></p>

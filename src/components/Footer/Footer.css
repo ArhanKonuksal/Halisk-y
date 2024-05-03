@@ -8,40 +8,31 @@
 .footer div {
     display: inline-block;
     padding-top: 30px;
-    height: 180px;
+    height: auto;
     width: 30%;
     text-align: center;
     box-sizing: border-box;
+    vertical-align: top; 
 }
 
 .footer p {
     font-family: Helvetica, sans-serif;
     padding-top: 10px;
     font-size: 14px;
+    margin: 0;
 }
 
 .footer h4 {
     font-size: 18px;
-}
-.footer #footer-info {
-    float: left;
-    width: 25%;
-    height: 200px;
-    background-color: black;
+    margin-top: 0;
 }
 
-.footer #footer-iletisim {
-    float: left;
-    width: 50%;
-    height: 200px;
-    background-color: black;
-}
-
+.footer #footer-info,
+.footer #footer-iletisim,
 .footer #footer-calisma {
-    float: right;
-    width: 25%;
-    height: 200px;
-    background-color: black;
+    width: 100%; 
+    height: auto; 
+    padding-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
