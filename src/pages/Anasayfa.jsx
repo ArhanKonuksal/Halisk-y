@@ -10,13 +10,13 @@ const Anasayfa = () => {
     <>
     <Navbar />
         <div>
-        <img src={BgPhoto}></img>
+        <img src={BgPhoto} alt="background"></img>
           <h1>Beyköy Süt Ürünleri</h1>
             <Hero />
           <h1>Sütün Sanata Dönüştüğü Yolculuk !</h1>
           <p>yazı gelecek</p>
             <Link to="/Ürünlerimiz">
-          <button className="btn" >Ürünlerimiz</button>
+          <button>Ürünlerimiz</button>
             </Link>
         </div>
     <Footer />
