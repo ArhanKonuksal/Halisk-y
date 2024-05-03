@@ -10,31 +10,38 @@
 
 .kişiler .left {
     text-align: center;
-    margin: auto;
+    margin: 1rem;
     padding: 1rem;
-    max-width: 600px;
+    max-width: 300px;
+}
+
+.kişiler .left h1 {
+    margin-bottom: 0.5rem;
 }
 
 .kişiler .left p {
-    margin: 1.2rem 0;
-
+    margin: 0.5rem 0;
 }
 
 .kişiler .right {
-    max-width: 700px;
+    max-width: 300px;
+    margin: 1rem;
 }
 
 .right .img-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    overflow: hidden;
 }
 
 .right .img {
-    max-width: 90%;
-    border: 1px solid #333;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 .right .top {

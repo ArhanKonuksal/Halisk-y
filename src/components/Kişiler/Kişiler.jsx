@@ -16,7 +16,7 @@ const Kişiler = () => {
             </div>
             <div className="left">
             <h1>Özten Özkoç</h1>
-            <p>gelecek<br/>yazılar</p>
+            <p>yazılar gelecek</p>
             <Link to="/İletişim">
                 <button className="btn">İletişim</button>
             </Link>
@@ -31,7 +31,7 @@ const Kişiler = () => {
             </div>
             <div className="left">
             <h1>Mehmet Özkoç</h1>
-            <p>yazılar<br/>gelecek</p>
+            <p>yazılar gelecek</p>
             <Link to="/İletişim">
                 <button className="btn">İletişim</button>
             </Link>

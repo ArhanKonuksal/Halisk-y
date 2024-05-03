@@ -5,14 +5,13 @@ import Ürün from '../components/Ürünler/Ürün';
 import {ÜRÜNLER} from "../components/Ürünler/Ürünler"
 
 
-
 const Ürünlerimiz = () => {
   return (
     <>
     <Navbar />
     <div>
       <h1>Ürünlerimiz</h1>
-      <p>İşte Ürünlerimiz</p>
+      <p>Halisköy süt ürünleri, yüksek kaliteli malzemelerden üretilir ve özenle işlenir. Her bir ürün, taze ve doğal malzemeler kullanılarak üretilir ve titizlikle kontrol edilir. Halisköy süt ürünleri, lezzetli ve sağlıklı bir seçenek sunar, kalite ve tazelik konusunda öne çıkar.</p>
     </div>
     <div className='ürünler'>
         {ÜRÜNLER.map(ürün => (

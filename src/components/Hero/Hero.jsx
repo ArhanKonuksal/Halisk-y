@@ -4,10 +4,11 @@ import resim1 from "../../assets/5.jpeg"
 import resim2 from "../../assets/1.jpg"
 import resim3 from "../../assets/2.jpg"
 import resim4 from "../../assets/3.jpeg"
+import "./Hero.css"
 
 const Hero = () => {
   return (
-    <div>
+    <div className='hero'>
       <div className='left-side'>
         <h1>Sofranın Taze Lezzeti</h1>
         <p>Yazılar gelecek kaan dan inşallah</p>
