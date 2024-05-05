@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import Özten from "../../assets/Özten.jpg"
+import Özten from "../../assets/özten.jpg"
 import Mehmet from "../../assets/Mehmet.jpg"
 import "./Kişiler.css"
 

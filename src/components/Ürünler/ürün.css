@@ -1,15 +1,15 @@
 .ürünler {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Display 3 products per row */
-  gap: 20px; /* Adjust the gap between items */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
   justify-items: center;
 }
 
 .ürün {
   border-radius: 15px;
-  max-width: 300px; /* Limit the maximum width */
-  width: 100%; /* Allow items to expand to fill available space */
+  max-width: 300px; 
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -26,17 +26,17 @@
 }
 
 .ürün:hover {
-  transform: translateY(-5px); /* Add slight elevation on hover */
+  transform: translateY(-5px);
 }
 
 @media (max-width: 1024px) {
   .ürünler {
-    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns on smaller screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .ürünler {
-    grid-template-columns: repeat(1, 1fr); /* Change to 1 column on even smaller screens */
+    grid-template-columns: repeat(1, 1fr);
   }
 }
