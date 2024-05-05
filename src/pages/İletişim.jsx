@@ -15,8 +15,7 @@ const İletişim = () => {
       <p>Merhaba! İletişim sayfamıza hoş geldiniz. Halışköy ürünleri hakkında daha fazla bilgi almak, sipariş vermek veya herhangi bir soru sormak için bize buradan ulaşabilirsiniz. Size en kısa sürede yanıt vermeyi dört gözle bekliyoruz!</p>
     <Form />
     <Link to="https://web.whatsapp.com/">
-      <img className="wp-img" src={WpLogo} alt='wp-logo'></img>
-    </Link>
+    <img src={WpLogo} alt='wp-logo' style={{ width: "90%", height: "auto", padding: "0 10%", marginLeft: "5%" }} />    </Link>
     <Konum />
     </div>
     <Footer />
